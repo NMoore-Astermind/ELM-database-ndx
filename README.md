@@ -20,7 +20,7 @@ do.
 > |---|---:|---|
 > | path-only, corpus v2 (7 ecosystems) | **28.0%** | ❌ FAIL |
 > | path + structural features (import graph, inventory) | **27.6%** | ❌ FAIL — no better than path-only |
-> | class-targeted harvest | *in progress* | — |
+> | class-targeted harvest | *corpus built 2026-09-21 — awaiting freeze and coverage check* | — |
 >
 > **No model trained on this data is known to generalise yet.** If you train on the corpus once it
 > lands, read `methodology/FEATURES.md` first — it lists the failure modes, and none of them are
