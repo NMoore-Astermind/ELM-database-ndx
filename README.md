@@ -101,10 +101,14 @@ was itself validated first — it had to reproduce the previous model's number e
 trusted with a new one. The same machinery returned two FAILs before it returned this PASS, and all
 three are published.
 
-**One known defect:** the closing narration printed at the end of every coverage log is hardcoded —
-written for the original failure and never made conditional, so it contradicts the passing result
-printed above it. The logs are published verbatim rather than edited after the fact;
-[`results/CERTIFICATION.md`](results/CERTIFICATION.md) carries the correction.
+**One defect, found and fixed:** the closing narration in the published coverage logs is hardcoded
+— written for the original failure and never made conditional, so it contradicts the passing result
+printed directly above it. The logs are published **verbatim rather than edited after the fact**;
+the script in `scripts/` is the fixed version, which derives that verdict from the numbers and is
+covered by a self-test (`--selftest`). [`results/CERTIFICATION.md`](results/CERTIFICATION.md)
+carries the full correction. **A remaining gap is recorded there too:** the frozen artifact carries
+a refit fingerprint so a run can prove it scored the frozen model, and the script does not yet check
+it — so every coverage figure here is faithful-by-construction rather than mechanically verified.
 
 ## Reproducing
 

@@ -57,17 +57,28 @@ each — `config` is 90.8% nest, `middleware` 80.0%, `schema` 78.6%, `model` 67.
 may have learned "a config file looks like a NestJS config file", which is the v1 failure
 reproduced one class down. Testing it needs a fourth ecosystem per class and a bar declared first.
 
-## 🔴 Do not quote the closing block of the coverage logs
+## 🔴 Do not read the closing block of the published coverage logs
 
-`scripts/elm-coverage-check.mjs:156-157` prints a **hardcoded verdict**: an unconditional
-`console.log` ending *"and collapses where it was not … It learned this corpus's archetype prior,
-not a general path→archetype mapping."* It was written for the v1 failure and never made
-conditional, so it prints for **any** model regardless of its numbers.
+**The logs in this folder end with a verdict that contradicts their own tables.** Until 2026-09-23
+`scripts/elm-coverage-check.mjs` printed two **unconditional** lines — *"and collapses where it was
+not … It learned this corpus's archetype prior, not a general path→archetype mapping"* — written
+when the v1 model genuinely had collapsed, and true of v1. They then printed for **every** model
+regardless of its numbers. So `elm-coverage-v3-classtargeted.log` ends by announcing the exact
+failure the run above it had just disproved.
 
-**Both `elm-coverage-v3-classtargeted.log` and `elm-guard160-v3-classtargeted.log` therefore end
-with prose that contradicts the PASS in the table directly above it.** The tables are correct; the
-closing narration is stale text, not a finding. The logs are published verbatim rather than edited
-after the fact — this note is the correction.
+**The arithmetic in those logs was always correct. Only the narration was wrong** — and the
+narration is the part a reader skims. The logs are published **verbatim rather than edited after
+the fact**; this note is the correction.
+
+**The script is fixed** (n-dx `6d844bd3`, and the copy in `scripts/` here is the fixed one). The
+closing block is now derived from the numbers: it reports the `service`/`utility` gap against the
+teacher on both populations with direction and magnitude, prints the collapse verdict **only** when
+the fresh-ecosystem prior over-predicts `service`/`utility` by ≥ 15 pp (the v1 signature),
+otherwise states the prior is *not* collapsed and carries the necessary-not-sufficient caveat, and
+**names opposite per-repo biases when they occur** — which is the failure mode the aggregate hides.
+It was proven red before green: `node scripts/elm-coverage-check.mjs --selftest` runs the real
+committed numbers through it with no model work, and the old lines fail its second assertion by
+construction. **A rerun would print the right thing; the published logs predate the fix.**
 
 **The refit fingerprint is unverified.** The frozen artifact carries `refitFingerprint` so a
 certification run can prove it scored the frozen model; the script never checks it. Every coverage

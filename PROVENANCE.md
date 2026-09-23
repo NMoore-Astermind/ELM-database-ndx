@@ -1,6 +1,6 @@
 # Provenance
 
-Archived verbatim from `AsterMindAI/n-dx`, branch `Nolan-Work`, commit `ada5cb48b59d60069b584e2b94262982ead045e7`, on 2026-09-23.
+Archived verbatim from `AsterMindAI/n-dx`, branch `Nolan-Work`, commit `38eb3ca55ee8cc99900d1e8711653c3b67b957ab`, on 2026-09-23.
 
 Every SHA-256 below was verified against its source file at archive time; a mismatch would have
 aborted the archive. Artifacts are copied byte for byte and are never edited after the fact.
@@ -12,7 +12,7 @@ aborted the archive. Artifacts are copied byte for byte and are never edited aft
 | `data/elm-frozen-model-v3-classtargeted.json` | `scripts/data/elm-frozen-model-v3-classtargeted.json` | `d3e88fb80a151b078917d2d663911dfa24074377a9694c4ab954832744ddeff3` |
 | `methodology/ADR-2026-09-17-nutella-elm-training-database-construction.md` | `Claude-Context/ADR/ADR-2026-09-17-nutella-elm-training-database-construction.md` | `ac431c18945d8158d14d98d5c1ea2b0e17c3c642aac3bfe74b008163a742def1` |
 | `methodology/ADR-2026-09-21-nutella-class-targeted-harvest.md` | `Claude-Context/ADR/ADR-2026-09-21-nutella-class-targeted-harvest.md` | `89a6cdf7d9b192c818af5dcce0b46f44dbecfaea0f2bd0d0177c48f6149f874c` |
-| `methodology/ELM-CORPUS.md` | `Claude-Context/Nolan-Agents/ELM-CORPUS.md` | `6f5940dd34ce441189c1508c0cc8cb7bb85f5262367cf2bfa03a07ed4b3ca7b6` |
+| `methodology/ELM-CORPUS.md` | `Claude-Context/Nolan-Agents/ELM-CORPUS.md` | `b3136859584ac58418cb0436eb609182fb0c7f691995a76c584867dc0f430573` |
 | `methodology/FEATURES.md` | `Claude-Context/Nolan-Agents/FEATURES.md` | `d288176ccc64a06b763359ddc0cf36865869e53890986f30caa7c50830655018` |
 | `methodology/IMPL-2026-09-18-nutella-elm-training-database-construction.md` | `Claude-Context/IMPL/IMPL-2026-09-18-nutella-elm-training-database-construction.md` | `9b5b5b6df4dee953bf85cdd499890768ea63ee74f2fc0b1c4d150da4bb0000a8` |
 | `methodology/IMPL-2026-09-21-nutella-class-targeted-harvest.md` | `Claude-Context/IMPL/IMPL-2026-09-21-nutella-class-targeted-harvest.md` | `92fffca91e7993497ea93935e9f201787f82349703dc3adc167b57ccc53b3b06` |
@@ -33,7 +33,7 @@ aborted the archive. Artifacts are copied byte for byte and are never edited aft
 | `results/elm-parity-control.log` | `scripts/data/elm-parity-control.log` | `830955cc6be683306b2804bf52b7b3b5f27b5419b45877a0a617b98b4cca1a82` |
 | `scripts/elm-classify-residue.mjs` | `scripts/elm-classify-residue.mjs` | `564087fe7918e8b55a76cbaa3e19c42ba68df4180d9c0c5240923382d5dfffd9` |
 | `scripts/elm-corpus-build.mjs` | `scripts/elm-corpus-build.mjs` | `408476f5fb61ce0b9ec4d88b7115574b979e2e5a11672290323008c3540aa5b8` |
-| `scripts/elm-coverage-check.mjs` | `scripts/elm-coverage-check.mjs` | `4f71927cc59e22bb4fa1dfd3ea6ebf93f04cbe6cc3e805d6ea2d35eed0f8c2f0` |
+| `scripts/elm-coverage-check.mjs` | `scripts/elm-coverage-check.mjs` | `be9d78465f530f4e27d060fcc1e7962e3e6c9c7626131c976fb225c3d6a0e1f7` |
 | `scripts/elm-coverage-features.mjs` | `scripts/elm-coverage-features.mjs` | `bb2e6bc95bec89df6f03624cbfb4fa9659504ca83cf9071d893e07607c55ebbc` |
 | `scripts/elm-feature-survey.mjs` | `scripts/elm-feature-survey.mjs` | `6d64c73d8f90ef79f7ae166bcfce404ec6e5f8c89acad4b041610861115061b4` |
 | `scripts/elm-features-selftest.mjs` | `scripts/elm-features-selftest.mjs` | `b9aba6c51cd24e05cef1b82d8639a1f9961546fba492526454126ca7c495f0b7` |
