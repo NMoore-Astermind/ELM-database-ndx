@@ -82,6 +82,37 @@ to anything published here.
 needs `--max-old-space-size=6144`. An out-of-memory run **exits 0 with an empty results table**, so
 check that the table is populated.
 
+## Using the corpus in a different feature space
+
+**Every row pins its repository's commit and remote**, so the rows can be re-derived into any
+feature space without re-labelling a single file — which is the property this dataset was built
+for. All 2,195 rows were verified retrievable at their pinned commits, and **all ten commits still
+resolve on their public remotes** (`results/elm-content-availability.log`), so this works from a
+fresh clone rather than only on the machine that built it.
+
+`scripts/elm-corpus-featurise.mjs` is the bridge into `sourcevision`'s content-based feature space
+(651 dimensions: extension, path scalars, hashed path and content tokens, structural counts):
+
+```
+2,195 / 2,195 rows featurised   0 content missing   17 truncated at the 64 KB cap
+15 models x 128 hidden trained in 4.6s   (results/elm-corpus-featurise.log)
+```
+
+Two things it does that anything reading this dataset should also do:
+
+- **Bytes come from git at the pinned commit, not from a working tree**, so the output does not
+  depend on what happens to be checked out.
+- **The output pins `featureVersion`, `featureVectorSize`, `maxContentBytes`, the extractor's
+  sha256 and the corpus sha256.** A feature-version number alone is not enough — a changed content
+  cap, or a rebuilt extractor at the same version, invalidates the matrices with no error.
+
+The derived matrices are **not** published here: they regenerate in about 30 seconds and are tied
+to one extractor build, so a stale copy would be worse than none.
+
+⚠️ **The labels are feature-space-independent. The corpus's *shape* is not.** Which classes were
+harvested was decided from the starvation diagnosis of a path-only model, so a different feature
+space may be weak at different classes. Re-featurising inherits that choice silently.
+
 ## Layout
 
 | folder | contents |

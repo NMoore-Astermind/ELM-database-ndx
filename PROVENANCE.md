@@ -1,6 +1,6 @@
 # Provenance
 
-Archived verbatim from `AsterMindAI/n-dx`, branch `Nolan-Work`, commit `38eb3ca55ee8cc99900d1e8711653c3b67b957ab`, on 2026-09-23.
+Archived verbatim from `AsterMindAI/n-dx`, branch `Nolan-Work`, commit `8629795f775f1c451f2b92d4f91747cbf3f17ac5`, on 2026-09-25.
 
 Every SHA-256 below was verified against its source file at archive time; a mismatch would have
 aborted the archive. Artifacts are copied byte for byte and are never edited after the fact.
@@ -19,6 +19,8 @@ aborted the archive. Artifacts are copied byte for byte and are never edited aft
 | `preregistration/elm-harvest-preregistration.json` | `scripts/data/elm-harvest-preregistration.json` | `c7d3ffe51be7002b22d003164d697fb0888d99cc2973d5a8b8bfc649fb2d4472` |
 | `preregistration/elm-v3-preregistration.json` | `scripts/data/elm-v3-preregistration.json` | `89a94f55f71504acad8b041109aad98d945bcbf25cd6a48715acf64bd4b609d0` |
 | `preregistration/elm-v3-selection.json` | `scripts/data/elm-v3-selection.json` | `c6ec9837bcdf834bf38a0e6d4b88f48cc9d0d70aa3d92da8f890279ff0579b03` |
+| `results/elm-content-availability.log` | `scripts/data/elm-content-availability.log` | `1bcaa0c9f02840abd5a27fe3ed520f0dbee98a8359f6b6d542ee39edf1f1eb89` |
+| `results/elm-corpus-featurise.log` | `scripts/data/elm-corpus-featurise.log` | `500bbf116f7d4a14587f7c558e508c0455540538c27a8ee4e113c6c164d5f11e` |
 | `results/elm-coverage-v2.log` | `scripts/data/elm-coverage-v2.log` | `2222b282fc1230a4b4f554bc896d6c23d03cf63a860edba7fc8bd9d5f68be7ac` |
 | `results/elm-coverage-v3-classtargeted.log` | `scripts/data/elm-coverage-v3-classtargeted.log` | `311ea841d6acd31993b87ecd74203307d87e5f10e09834e1e0293a62ea3aacf3` |
 | `results/elm-coverage-v3-primary.json` | `scripts/data/elm-coverage-v3-primary.json` | `94c66c3fd8d5b3c77bcc63cb2869f3aabb6bde657ed23ac56e37a1c6ad3d33a0` |
@@ -32,7 +34,9 @@ aborted the archive. Artifacts are copied byte for byte and are never edited aft
 | `results/elm-normaliser-sweep.json` | `scripts/data/elm-normaliser-sweep.json` | `5607de2e9ef2175404d03412e9a0b80a13feb7ba4f288c3d77171b2a92c3cb08` |
 | `results/elm-parity-control.log` | `scripts/data/elm-parity-control.log` | `830955cc6be683306b2804bf52b7b3b5f27b5419b45877a0a617b98b4cca1a82` |
 | `scripts/elm-classify-residue.mjs` | `scripts/elm-classify-residue.mjs` | `564087fe7918e8b55a76cbaa3e19c42ba68df4180d9c0c5240923382d5dfffd9` |
+| `scripts/elm-content-availability.mjs` | `scripts/elm-content-availability.mjs` | `27bfb93032b3f29c704bc436491a562f4672121e21f49d0bb3abba63827d713c` |
 | `scripts/elm-corpus-build.mjs` | `scripts/elm-corpus-build.mjs` | `408476f5fb61ce0b9ec4d88b7115574b979e2e5a11672290323008c3540aa5b8` |
+| `scripts/elm-corpus-featurise.mjs` | `scripts/elm-corpus-featurise.mjs` | `80ab2f71ac34c208595360e9909e669806ad30b8e87e3fdec9fb606e94904a7c` |
 | `scripts/elm-coverage-check.mjs` | `scripts/elm-coverage-check.mjs` | `be9d78465f530f4e27d060fcc1e7962e3e6c9c7626131c976fb225c3d6a0e1f7` |
 | `scripts/elm-coverage-features.mjs` | `scripts/elm-coverage-features.mjs` | `bb2e6bc95bec89df6f03624cbfb4fa9659504ca83cf9071d893e07607c55ebbc` |
 | `scripts/elm-feature-survey.mjs` | `scripts/elm-feature-survey.mjs` | `6d64c73d8f90ef79f7ae166bcfce404ec6e5f8c89acad4b041610861115061b4` |
